@@ -1,66 +1,76 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main>
+      {/* Navigation */}
+      <nav className="navbar container">
+        <div className="logo">Handcrafted Haven</div>
+        <div className="nav-links">
+          <a href="#">Shop</a>
+          <a href="#">Collections</a>
+          <a href="#">Our Story</a>
+          <a href="#">Contact</a>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </nav>
+
+      {/* Hero */}
+      <section className="hero">
+        <div className="container">
+          <h1>Artisanal Goods for the <br /> Modern Home</h1>
+          <p>Carefully curated, ethically sourced, and beautifully designed. Discover the heart of craftsmanship in every piece.</p>
+          <a href="#" className="btn">Shop Now</a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Featured Products */}
+      <section className="section container">
+        <h2 className="section-title">Newest Arrivals</h2>
+        <div className="grid">
+          {[
+            { id: 1, title: 'Terracotta Vase', price: '$45.00' },
+            { id: 2, title: 'Linen Throw Blanket', price: '$85.00' },
+            { id: 3, title: 'Hand-Carved Bowl', price: '$62.00' },
+            { id: 4, title: 'Sage Ceramic Mug', price: '$24.00' },
+          ].map((product) => (
+            <div key={product.id} className="card">
+              <div className="card-img">[ Product Image ]</div>
+              <div className="card-info">
+                <h3>{product.title}</h3>
+                <p>{product.price}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="section hero" style={{ backgroundColor: '#8a9a5b1a' }}>
+        <div className="container">
+          <h2>Our Artisanal Values</h2>
+          <div className="grid" style={{ marginTop: '2rem' }}>
+            <div>
+              <h3>Sustainability</h3>
+              <p>We believe in products that last a lifetime and respect our planet.</p>
+            </div>
+            <div>
+              <h3>Quality</h3>
+              <p>Every item is hand-selected for its superior craftsmanship and detail.</p>
+            </div>
+            <div>
+              <h3>Artisans First</h3>
+              <p>We work directly with makers to ensure fair pay and safe conditions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <div className="container">
+          <span className="logo">Handcrafted Haven</span>
+          <p>&copy; {new Date().getFullYear()} Handcrafted Haven. All rights reserved.</p>
+          <p style={{ marginTop: '1rem', fontSize: '0.8rem' }}>A CSE 341 Group Project by Luis E.</p>
+        </div>
+      </footer>
+    </main>
   );
 }
