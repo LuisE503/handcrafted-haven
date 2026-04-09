@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Handcrafted Haven
+
+An artisanal e-commerce web application for curated, ethically sourced home goods.
+
+This is a **CSE 341 group project** built with **Next.js 16** (App Router), **React 19**, and **TypeScript**.
+
+## Project Overview
+
+**Purpose**: To provide consumers with a quality-focused platform to discover and purchase handcrafted, sustainable home goods directly from artisans.
+
+**Tech Stack**:
+- Next.js App Router (Server & Client Components)
+- React 19 with TypeScript
+- CSS Modules & Global Styling
+- ESLint for code quality
+
+**Current Features**:
+- Responsive landing page with sticky navigation
+- Hero section with brand value proposition
+- Featured products grid (Newest Arrivals)
+- Artisanal values section (Sustainability, Quality, Artisans First)
+- Styled footer with project attribution
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation & Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── page.tsx          # Landing page component
+│   ├── layout.tsx        # Root layout with metadata
+│   ├── globals.css       # Global styles & design system
+│   └── page.module.css   # Page-specific styles
+public/               # Static assets
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design System
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Color Palette**:
+- Primary: Terracotta (#bc6c5a)
+- Secondary: Sage Green (#8a9a5b)
+- Accent: Earthy Sand (#d4a373)
+- Background: Off-White/Cream (#faf7f2)
+- Foreground: Charcoal (#2d2d2d)
 
-## Deploy on Vercel
+**Typography**:
+- Headings: Playfair Display (serif)
+- Body: Inter (sans-serif)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Roadmap (Planned)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [ ] Product Detail Pages
+- [ ] Shopping Cart & Checkout
+- [ ] PostgreSQL Database Integration
+- [ ] User Authentication
+- [ ] Product Filters & Search
+- [ ] Admin Dashboard
+
+## Team & Attribution
+
+This project is part of the CSE 341 course group capstone.
