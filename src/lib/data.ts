@@ -5,6 +5,7 @@ export const products: Product[] = [
     id: 1,
     slug: "terracotta-vase",
     name: "Terracotta Vase",
+    image: "/products/terracotta-vase.svg",
     shortDescription: "Hand-thrown clay vase with matte finish.",
     description:
       "A hand-thrown terracotta vase designed for dried stems and fresh arrangements. Its warm color and natural imperfections make each piece unique.",
@@ -21,6 +22,7 @@ export const products: Product[] = [
     id: 2,
     slug: "linen-throw-blanket",
     name: "Linen Throw Blanket",
+    image: "/products/linen-throw-blanket.svg",
     shortDescription: "Soft woven throw for modern living spaces.",
     description:
       "A breathable linen throw blanket with subtle texture. Great for sofas, reading corners, or layering at the end of your bed.",
@@ -37,6 +39,7 @@ export const products: Product[] = [
     id: 3,
     slug: "hand-carved-bowl",
     name: "Hand-Carved Bowl",
+    image: "/products/hand-carved-bowl.svg",
     shortDescription: "Solid wood serving bowl carved by artisans.",
     description:
       "A medium-size serving bowl carved from sustainably sourced wood. Perfect for fruit, salads, or as a centerpiece item.",
@@ -53,6 +56,7 @@ export const products: Product[] = [
     id: 4,
     slug: "sage-ceramic-mug",
     name: "Sage Ceramic Mug",
+    image: "/products/sage-ceramic-mug.svg",
     shortDescription: "Wheel-thrown mug with calming glaze.",
     description:
       "A ceramic mug with a satin sage glaze and comfortable grip. Designed for daily coffee and tea rituals.",
@@ -69,6 +73,7 @@ export const products: Product[] = [
     id: 5,
     slug: "woven-table-runner",
     name: "Woven Table Runner",
+    image: "/products/woven-table-runner.svg",
     shortDescription: "Textured cotton runner for handcrafted tablescapes.",
     description:
       "A woven cotton table runner made on a traditional loom. Adds natural texture and warmth to dining setups.",
@@ -84,6 +89,7 @@ export const products: Product[] = [
     id: 6,
     slug: "cedar-soy-candle",
     name: "Cedar Soy Candle",
+    image: "/products/cedar-soy-candle.svg",
     shortDescription: "Small-batch soy candle with cedar notes.",
     description:
       "A clean-burning soy candle with cedar and amber notes in a reusable ceramic vessel. Hand poured in small batches.",
@@ -99,6 +105,7 @@ export const products: Product[] = [
     id: 7,
     slug: "woven-wall-hanging",
     name: "Woven Wall Hanging",
+    image: "/products/woven-wall-hanging.svg",
     shortDescription: "Fiber art for neutral and modern interiors.",
     description:
       "A handwoven wall hanging made with natural fibers and soft earthy hues. Includes loop for easy installation.",
@@ -114,6 +121,7 @@ export const products: Product[] = [
     id: 8,
     slug: "olive-wood-spoon-set",
     name: "Olive Wood Spoon Set",
+    image: "/products/olive-wood-spoon-set.svg",
     shortDescription: "Carved spoon pair for daily cooking.",
     description:
       "A set of two olive wood cooking spoons with smooth finish. Durable, heat resistant, and crafted for daily use.",
@@ -129,6 +137,7 @@ export const products: Product[] = [
     id: 9,
     slug: "handloom-pillow-cover",
     name: "Handloom Pillow Cover",
+    image: "/products/handloom-pillow-cover.svg",
     shortDescription: "Textured cover with hidden zip closure.",
     description:
       "A handloom pillow cover that blends contemporary geometry with traditional weaving techniques.",
@@ -144,6 +153,7 @@ export const products: Product[] = [
     id: 10,
     slug: "stone-incense-holder",
     name: "Stone Incense Holder",
+    image: "/products/stone-incense-holder.svg",
     shortDescription: "Minimal carved holder for incense sticks.",
     description:
       "A carved stone incense holder with smooth edge details. Built for steady burning and easy cleanup.",
@@ -159,6 +169,7 @@ export const products: Product[] = [
     id: 11,
     slug: "artisan-tea-canister",
     name: "Artisan Tea Canister",
+    image: "/products/artisan-tea-canister.svg",
     shortDescription: "Ceramic storage canister with cork top.",
     description:
       "A handcrafted ceramic canister that keeps tea fresh while adding a warm visual accent to kitchen shelves.",
@@ -174,6 +185,7 @@ export const products: Product[] = [
     id: 12,
     slug: "calming-bath-salts",
     name: "Calming Bath Salts",
+    image: "/products/calming-bath-salts.svg",
     shortDescription: "Mineral-rich soak with botanical oils.",
     description:
       "A relaxing blend of sea salts and botanical oils to support recovery and stress relief after long days.",

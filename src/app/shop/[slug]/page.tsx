@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProductDetailClient } from "@/components/ProductDetailClient";
@@ -32,8 +33,16 @@ export default async function ProductDetailPage({ params }: ProductDetailProps) 
     <main>
       <SiteHeader />
       <section className={`section container ${styles.layout}`}>
-        <div className={styles.media} style={{ backgroundColor: product.colorToken }}>
-          {product.category}
+        <div className={styles.media}>
+          <Image
+            src={product.image}
+            alt={product.name}
+            fill
+            priority
+            sizes="(max-width: 900px) 100vw, 55vw"
+            className={styles.mediaImage}
+          />
+          <span className={styles.mediaBadge}>{product.category}</span>
         </div>
 
         <ProductDetailClient product={product} />
@@ -45,8 +54,15 @@ export default async function ProductDetailPage({ params }: ProductDetailProps) 
           <div className="grid">
             {recommendations.map((item) => (
               <article key={item.id} className="card">
-                <div className="card-img" style={{ backgroundColor: item.colorToken }}>
-                  {item.category}
+                <div className="card-img">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="card-photo"
+                  />
+                  <span className="card-badge">{item.category}</span>
                 </div>
                 <div className="card-info">
                   <h3>{item.name}</h3>

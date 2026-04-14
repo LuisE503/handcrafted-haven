@@ -5,14 +5,27 @@
 }
 
 .media {
+  position: relative;
   min-height: 420px;
   border-radius: 12px;
-  display: grid;
-  place-items: center;
-  font-size: 1.1rem;
+  overflow: hidden;
+}
+
+.mediaImage {
+  object-fit: cover;
+}
+
+.mediaBadge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #2f2b28;
+  color: #fff;
+  background: rgba(35, 30, 26, 0.72);
+  border-radius: 7px;
+  padding: 0.35rem 0.6rem;
   font-weight: 700;
 }
 

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { ProductCard } from "@/components/ProductCard";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -64,6 +65,9 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
           <p>
             Discover handcrafted products curated for everyday rituals and timeless homes.
           </p>
+          <p className={styles.resultCount}>
+            Showing {filtered.length} of {products.length} products
+          </p>
         </div>
       </section>
 
@@ -102,6 +106,10 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
           <button className="btn" type="submit">
             Apply
           </button>
+
+          <Link href="/shop" className={styles.clearLink}>
+            Clear filters
+          </Link>
         </form>
 
         {filtered.length === 0 ? (

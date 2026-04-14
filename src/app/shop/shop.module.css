@@ -2,6 +2,11 @@
   padding: 4.5rem 0;
 }
 
+.resultCount {
+  margin-top: 0.75rem;
+  color: #5f5a53;
+}
+
 .shopSection {
   display: flex;
   flex-direction: column;
@@ -33,6 +38,14 @@
   padding: 0.7rem 0.8rem;
   font: inherit;
   background: #fff;
+}
+
+.clearLink {
+  color: #77533b;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 600;
+  padding-bottom: 0.6rem;
 }
 
 .emptyState {
