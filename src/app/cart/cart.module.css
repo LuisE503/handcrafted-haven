@@ -1,0 +1,88 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 2rem;
+}
+
+.helpText {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: #59564f;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid #e8e1d8;
+  border-radius: 12px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid #f0e7db;
+}
+
+.table input {
+  width: 78px;
+  border: 1px solid #d7c9b7;
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+}
+
+.summary {
+  align-self: start;
+  background: #fff;
+  border: 1px solid #e8e1d8;
+  border-radius: 12px;
+  padding: 1.2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.summaryRow,
+.summaryRowTotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summaryRowTotal {
+  border-top: 1px solid #efe3d2;
+  padding-top: 0.9rem;
+  font-size: 1.1rem;
+}
+
+.removeButton {
+  border: none;
+  background: transparent;
+  color: #8f4f42;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.emptyState {
+  border: 1px dashed #d8c7b3;
+  border-radius: 12px;
+  background: #fff;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+}
+
+.checkoutMessage {
+  color: #2f6f45;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

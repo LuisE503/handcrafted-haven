@@ -1,0 +1,50 @@
+.heroCompact {
+  padding: 4.5rem 0;
+}
+
+.shopSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: end;
+  background: #fff;
+  border: 1px solid #e8e1d8;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.filters input,
+.filters select {
+  border: 1px solid #d7c9b7;
+  border-radius: 8px;
+  padding: 0.7rem 0.8rem;
+  font: inherit;
+  background: #fff;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem 1rem;
+  border: 1px dashed #d8c7b3;
+  border-radius: 12px;
+  background: #fff;
+}
+
+@media (max-width: 900px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,92 @@
+.layout {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1.1fr 1fr;
+}
+
+.media {
+  min-height: 420px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2f2b28;
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #7f5e3c;
+  font-weight: 700;
+}
+
+.price {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.metaList {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.actions label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+.actions input {
+  border: 1px solid #d7c9b7;
+  border-radius: 8px;
+  padding: 0.7rem 0.8rem;
+  width: 100px;
+}
+
+.inlineLink {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.feedback {
+  color: #2f6f45;
+  font-weight: 600;
+}
+
+.recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.notFoundBox {
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

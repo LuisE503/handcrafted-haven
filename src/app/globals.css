@@ -40,17 +40,21 @@ a {
   padding: 0 2rem;
 }
 
+.navbarWrap {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  background: rgba(250, 247, 242, 0.9);
+  border-bottom: 1px solid #eee;
+}
+
 /* Navigation */
 .navbar {
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  background: var(--white);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 .logo {
@@ -149,6 +153,24 @@ a {
   font-weight: 700;
 }
 
+.card-subtitle {
+  color: #6d655c;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+.card-link {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.sectionCta {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
 /* Footer */
 footer {
   background: var(--foreground);
@@ -161,4 +183,33 @@ footer .logo {
   color: var(--white);
   margin-bottom: 1rem;
   display: block;
+}
+
+@media (max-width: 780px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .navbar {
+    height: auto;
+    padding: 1rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }
